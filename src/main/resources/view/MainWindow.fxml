@@ -36,7 +36,9 @@
             <content>
                 <VBox fx:id="dialogContainer"
                       prefHeight="552.0"
-                      prefWidth="388.0" />
+                      prefWidth="388.0"
+                      spacing="10.0" />  <!-- Adds 10 pixels of spacing between dialog boxes -->
+
             </content>
         </ScrollPane>
     </children>

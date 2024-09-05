@@ -34,6 +34,8 @@ public class DialogBox extends HBox {
 
         dialog.setText(text);
         displayPicture.setImage(img);
+        clipImageToCircle();  // Clip the image into a circle
+
     }
 
     /**
@@ -55,6 +57,13 @@ public class DialogBox extends HBox {
         db.flip();
         return db;
     }
+
+    private void clipImageToCircle() {
+        // Create a circular clip shape
+        javafx.scene.shape.Circle clip = new javafx.scene.shape.Circle(50, 50, 50); // (centerX, centerY, radius)
+        displayPicture.setClip(clip); // Apply the clip to the ImageView
+    }
+
 }
 
 
