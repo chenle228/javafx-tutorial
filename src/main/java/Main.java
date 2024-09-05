@@ -25,7 +25,9 @@ public class Main extends Application {
         //Setting up required components
 
         scrollPane = new ScrollPane();
-        dialogContainer = new VBox();
+        // Add spacing between dialog boxes
+        dialogContainer = new VBox(10.0); // Adds vertical space between DialogBoxes
+
         scrollPane.setContent(dialogContainer);
 
         userInput = new TextField();
